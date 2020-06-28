@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gra papier kamień nożyczki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+        integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="burger">
+        <i class="fas fa-bars show"></i>
+        <i class="fas fa-times "></i>
+    </div>
+    <aside>
+        <nav>
+            <h2>Start again</h2>
+        </nav>
+    </aside>
+
+    <div class="wrap">
+
+        <h1>paper, stone, scissors game</h1>
+
+        <div class="select">
+            <h2>Choose please:</h2>
+            <img data-option="paper" src="paper.jpg" alt="" class="hover-active" title="Paper">
+            <img data-option="stone" src="stone.jpg" alt="" class="hover-active" title="Stone">
+            <img data-option="scissors" src="scissors.jpg" alt="" class="hover-active" title="Scissors">
+        </div>
+
+        <button class="start">Let's play!</button>
+
+        <div class="panel">
+            <div class="panel-left">
+                <h3>Current result</h3>
+                <p>Your choice: <span data-summary="your-choice"></span></p>
+                <p>Computers choice: <span data-summary="ai-choice"></span></p>
+                <h2>Winner: <span data-summary="who-win"></span></h2>
+            </div>
+
+            <div class="panel-right">
+                <h3>Your game summary</h3>
+                <p class="numbers">number of games: <span>0</span></p>
+                <p class="wins">wins: <span>0</span></p>
+                <p class="losses">losses: <span>0</span></p>
+                <p class="draws">draws: <span>0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>

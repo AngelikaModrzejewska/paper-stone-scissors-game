@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
+}
+
+html {
+  --orange: #ff922b;
+  --black: #000;
+  --white: #eee;
+}
+
+body {
+  background: linear-gradient(to right, #ffc078, #f06595);
+}
+
+/* navigation */
+
+.burger {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 50px;
+  color: var(--black);
+  line-height: 50px;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -20%;
+  width: 20%;
+  background-color: var(--orange);
+  transition: 0.3s linear;
+}
+
+aside h2 {
+  color: var(--black);
+  text-align: left;
+  margin: 0 15px;
+  padding: 20px 5px;
+  border-bottom: 4px solid var(--black);
+  cursor: pointer;
+}
+
+aside h2:hover {
+  background-color: var(--white);
+}
+
+.fas {
+  display: none;
+}
+
+i.show {
+  display: block;
+}
+
+aside.show {
+  left: 0;
+}
+
+/* game */
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  color: var(--orange);
+}
+
+h2 {
+  margin: 10px 0;
+  color: #f06595;
+}
+
+h3 {
+  margin: 15px 0;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+.select {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.select img {
+  width: 200px;
+  margin: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hover-active {
+  filter: grayscale(100%);
+}
+
+.hover-active:hover {
+  filter: sepia(100%);
+}
+
+.hover-noactive {
+  filter: sepia(100%);
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 20px;
+  border-style: none;
+  text-transform: uppercase;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 22px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: var(--orange);
+}
+
+.panel {
+  display: flex;
+  flex-basis: 45%;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.panel-left p {
+  font-size: 18px;
+}
+
+.panel-left h2 {
+  color: var(--orange);
+}
+
+span {
+  font-weight: bold;
+}
