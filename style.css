@@ -6,7 +6,8 @@
 }
 
 html {
-  --orange: #ff922b;
+  --yellow: #ffe700;
+  --blue: #20bef2;
   --black: #000;
   --white: #eee;
 }
@@ -34,7 +35,7 @@ aside {
   bottom: 0;
   left: -20%;
   width: 20%;
-  background-color: var(--orange);
+  background-color: #2e3192;
   transition: 0.3s linear;
 }
 
@@ -78,7 +79,7 @@ aside.show {
 h1 {
   text-align: center;
   margin: 40px 0;
-  color: var(--orange);
+  color: var(--yellow);
 }
 
 h2 {
@@ -136,7 +137,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--orange);
+  background-color: var(--yellow);
 }
 
 .panel {
@@ -151,7 +152,7 @@ button:hover {
 }
 
 .panel-left h2 {
-  color: var(--orange);
+  color: var(--yellow);
 }
 
 span {
