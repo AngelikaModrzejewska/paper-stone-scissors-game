@@ -7,7 +7,6 @@
 
 html {
   --yellow: #ffe700;
-  --blue: #a5d2e1;
   --orange: #ffc078;
   --pink: #f06595;
   --black: #000;
@@ -51,7 +50,7 @@ aside h2 {
 }
 
 aside h2:hover {
-  background-color: var(--blue);
+  background-color: var(--yellow);
 }
 
 .fas {
@@ -139,7 +138,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--blue);
+  background-color: var(--yellow);
 }
 
 .panel {
