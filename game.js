@@ -62,7 +62,7 @@ function publishResult(player, ai, result) {
   } else {
     document.querySelector("p.draws span").textContent = ++gameSummary.draws;
     document.querySelector('[data-summary="who-win"]').textContent = "Draw!";
-    document.querySelector('[data-summary="who-win"]').style.color = "#A5D2E1";
+    document.querySelector('[data-summary="who-win"]').style.color = "#20bef2";
   }
 }
 
