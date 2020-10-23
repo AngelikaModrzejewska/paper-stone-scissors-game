@@ -53,7 +53,7 @@ function publishResult(player, ai, result) {
   if (result === "win") {
     document.querySelector("p.wins span").textContent = ++gameSummary.wins;
     document.querySelector('[data-summary="who-win"]').textContent = "You won!";
-    document.querySelector('[data-summary="who-win"]').style.color = "#b3d696";
+    document.querySelector('[data-summary="who-win"]').style.color = "#3eb960";
   } else if (result === "loss") {
     document.querySelector("p.losses span").textContent = ++gameSummary.losses;
     document.querySelector('[data-summary="who-win"]').textContent =
