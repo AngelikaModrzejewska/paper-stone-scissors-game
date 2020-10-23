@@ -53,16 +53,16 @@ function publishResult(player, ai, result) {
   if (result === "win") {
     document.querySelector("p.wins span").textContent = ++gameSummary.wins;
     document.querySelector('[data-summary="who-win"]').textContent = "You won!";
-    document.querySelector('[data-summary="who-win"]').style.color = "#3cbd3c";
+    document.querySelector('[data-summary="who-win"]').style.color = "#b3d696";
   } else if (result === "loss") {
     document.querySelector("p.losses span").textContent = ++gameSummary.losses;
     document.querySelector('[data-summary="who-win"]').textContent =
       "You lost!";
-    document.querySelector('[data-summary="who-win"]').style.color = "#f74242";
+    document.querySelector('[data-summary="who-win"]').style.color = "#ee5051";
   } else {
     document.querySelector("p.draws span").textContent = ++gameSummary.draws;
     document.querySelector('[data-summary="who-win"]').textContent = "Draw!";
-    document.querySelector('[data-summary="who-win"]').style.color = "#20bef2";
+    document.querySelector('[data-summary="who-win"]').style.color = "#A5D2E1";
   }
 }
 
