@@ -8,12 +8,14 @@
 html {
   --yellow: #ffe700;
   --blue: #20bef2;
+  --orange: #ffc078;
+  --pink: #f06595;
   --black: #000;
   --white: #eee;
 }
 
 body {
-  background: linear-gradient(to right, #ffc078, #f06595);
+  background: linear-gradient(to right, var(--orange), var(--pink));
 }
 
 /* navigation */
@@ -44,13 +46,13 @@ aside h2 {
   text-align: left;
   margin: 0 15px;
   padding: 20px 5px;
-  border-bottom: 4px solid var(--black);
+  border-bottom: 4px solid white;
   cursor: pointer;
 }
 
 aside h2:hover {
-  color: var(--yellow);
-  border-bottom: 4px solid var(--yellow);
+  color: var(--orange);
+  border-bottom: 4px solid var(--orange);
 }
 
 .fas {
@@ -85,7 +87,7 @@ h1 {
 
 h2 {
   margin: 10px 0;
-  color: #f06595;
+  color: var(--pink);
 }
 
 h3 {
